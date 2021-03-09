@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #9ec4f8;
+}
+
+section {
+  padding: 80px 15px;
+}
+.container {
+  max-width: 930px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 15px;
+  background-color: #030849;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: "Playfair Display SC";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f8fffb;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#cadastro {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.dados-pessoais,
+.endereco {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-family: "Inter", "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f8fffb;
+}
+
+h2:first-of-type::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background: #f8fffb;
+  margin: 15px 0 50px;
+}
+
+.input-container {
+  margin-bottom: 35px;
+}
+
+label {
+  width: 100%;
+  height: 25px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+input {
+  /* reset appeareance */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: none;
+  width: 100%;
+  height: 35px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+input:focus {
+  border-color: #ffaa04;
+}
+
+.error.active {
+  color: orange;
+}
+
+.button-position {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+button {
+  width: 200px;
+  height: 45px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffaa04;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #ffaa04;
+  margin-bottom: 30px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s;
+}
+
+button:hover {
+  border-color: #1b79fb;
+  color: #1b79fb;
+  transition: 0.3s ease;
+}
+
+/* Estilo para responsivo */
+@media only screen and (max-width: 979px) {
+  .container {
+    max-width: 500px;
+  }
+
+  #cadastro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} /*Final do estilo responsivo*/
